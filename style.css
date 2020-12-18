@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #f3f5f9;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar {
+  width: 300px;
+  height: 100%;
+  background: #4b4276;
+  padding: 30px 0px;
+  position: fixed;
+  transform: translateX(-300px);
+  transition: transform 250ms ease-in-out;
+}
+
+.wrapper .sidebar h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+  color: #bdb8d7;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color: #594f8d;
+}
+
+.wrapper .sidebar ul li:hover a {
+  color: #fff;
+}
+
+.wrapper .sidebar .social_media {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a {
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content {
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header {
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info {
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div {
+  margin-bottom: 20px;
+}
+
+.fa-question-circle,
+.fa-phone {
+  margin-right: 10px;
+}
+
+.sidebar ul li ul {
+  display: none;
+  z-index: 10;
+  top: 77px;
+}
+
+.sidebar ul li:hover ul {
+  display: block;
+  height: 400px;
+  margin-left: 300px;
+  padding: 0 100px 10px 10px;
+  background-color: red;
+  position: fixed;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar ul li ul:hover {
+  background: blueviolet;
+}
+
+i {
+  padding-right: 10px;
+}
+
+.main-continer {
+  margin-left: 200px;
+  display: inline;
+}
+
+.main-continer .pic1 img,
+.pic2 img {
+  width: 200px;
+  height: 200px;
+}
+
+.text1 {
+  position: absolute;
+  left: 500px;
+  top: 300px;
+}
+.pic1 img {
+  margin-top: 200px;
+}
+
+.krishna {
+  margin-left: 900px;
+  position: absolute;
+  top: 50%;
+}
+
+.text2 {
+  position: absolute;
+  right: 300px;
+  top: 50%;
+}
+
+#index {
+  background-image: url("bg.jpg");
+  background-size: 300% 900%;
+  background-repeat: no-repeat;
+}
+
+li {
+  color: #fff;
+}
+
+/* aboutkrishna */
+
+#aboutK {
+  background-image: radial-gradient(
+    circle 422px at -10.3% 110.7%,
+    rgba(219, 76, 180, 1) 9.5%,
+    rgba(231, 119, 209, 1) 50.8%,
+    rgba(255, 180, 241, 1) 88.5%
+  );
+  background-size: 300% 900%;
+}
+
+.aboutkrishna {
+  margin-left: 400px;
+  margin-top: 200px;
+}
+
+.ak {
+  margin-left: 260px;
+}
+
+.text p {
+  text-align: center;
+}
+
+span {
+  color: #00ffff;
+  font-family: "Lobster", cursive;
+  animation: textChange 0.5s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes textChange {
+  0% {
+    color: #00ffff;
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+  50% {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+  }
+  100% {
+    color: #23d75e;
+    text-decoration: underline;
+    text-decoration-color: #00ff00;
+  }
+}
+
+.text {
+  font-size: 24px;
+}
+
+.text a {
+  color: #00ffff;
+  font-family: "Lobster", cursive;
+  animation: textChange 0.5s linear infinite;
+}
+
+#contact-index {
+  background: #ee82ee;
+}
+
+.contact {
+  margin: auto;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.contact input {
+  width: 200px;
+  font-size: 17px;
+  padding: 20px 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+
+.submit {
+  font-size: 18px;
+  padding: 10px;
+  background: #8f4fcc;
+  color: #fff;
+  border: none;
+}
+
+.aboubt {
+  text-align: center;
+  margin: auto;
+}
+
+.user {
+  background: grey;
+  height: 200px;
+  min-width: 300px;
+  width: 500px;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.fa.fa-quote-left {
+  color: orange;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.user h3,
+p {
+  font-size: 20px;
+}
+
+.user img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.user a {
+  color: #000;
+  margin-top: 10px;
+}
+
+#aboutus {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background-size: 100% 300%;
+}
+
+.about-krishna-mother {
+  margin: auto;
+  text-align: center;
+}
+
+.about-krishna-mother img {
+  height: 200px;
+  width: 200px;
+  border-radius: 60%;
+}
+
+#about-krishna-mother {
+  background: #1a2a6c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdbb2d,
+    #b21f1f,
+    #1a2a6c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdbb2d,
+    #b21f1f,
+    #1a2a6c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+hr {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.balram {
+  margin: auto;
+  text-align: center;
+}
+
+.balram img {
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+#aboutkb {
+  background: #22c1c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.about-krishna-wifes{
+  margin: auto;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.all8{
+  margin-top: 20px;
+}
+
+.all8 li{
+  margin-bottom: 10px; color: #fff ;
+  font-weight: bold;
+}
+
+#about-krishna-wifes{
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-size: 200% 200%;
+}
+
+
+.container {
+  position: relative;
+  left: 200px;
+}
+.vasudev {
+  font-size: 3em;
+  position: relative;
+  left: 450px;
+  margin: 30px 0 0 0 ;
+}
+.imgf {
+  margin-left: 390px;
+  filter: contrast(100%); 
+}
+#kf {
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  background-size: 200% 200%;
+}
+.inf {
+  font-size: 1.5em;
+  padding-left: 400px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.imgf:hover {
+  transform: scale(1.3);
+}
+
+#ar{
+  background: #159957;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+.about-radha{
+  margin: auto;
+  text-align: center;
+}
+
+.about-radha img{
+  height: 500px;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 40%;
+}
+
+.aboutradmother{
+  margin: auto;
+  text-align: center;
+}
+
+#aboutradhamother{
+  background-image: radial-gradient( circle 958px at 2.2% 93.5%,  rgba(219,52,52,1) 0%, rgba(239,221,44,1) 99.7% );
+  background-size: 200% 200%;
+}
+
+.aboutradmother img{
+  width: 400px;
+  border-radius: 50%;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-radha-father, .about-radha-brother{
+ margin: auto;
+ text-align: center;   
+}
+
+.about-radha-father, .about-radha-brother img{
+  width: 600px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#aboutradhafather{
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background-size: 200% 600%;
+}
+
+#arb{
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  background-size: 100% 300%;
+}
+
+.sidebarIconToggle{
+  width: 22px;
+  height: 100px;
+  position: absolute;
+  z-index: 20;
+  top: 22px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.textofmenu{
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+#openSidebarMenu:checked ~ .sidebar{
+  transform: translateX(0px);
+}
+
+.spinner{
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s;
+}
+
+.spinner.middle, .spinner.bottom{
+  margin-top: 3px;
+}
+
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle{
+  opacity: 0;
+}
+
+
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top{
+ transform: rotate(135deg);
+ margin-top: 8px;
+}
+
+
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom{
+  transform: rotate(-135deg);
+ margin-top: -9px;
+}
+
+#openSidebarMenu{
+  display: none;
+}
+
+@media screen and (max-width:400px){
+  .about-krishna-mother p{
+    font-size:10px;
+  }
+  .ak{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width:732px){
+ 
+}
